@@ -7,6 +7,7 @@ package com.demo.strategy;
  */
 public class Client {
 	public static void main(String[] args) {
+		System.out.println("测试策略1-----------------------------------------");
 		/**
 		 * 多态写法,左边接口接收,右边实现类(策略)
 		 */
@@ -20,7 +21,7 @@ public class Client {
 		 */
 		vip0Strategy.getPrice(1000);
 
-
+		System.out.println("测试策略2-----------------------------------------");
 		Strategy vip1Strategy = new VIP1Strategy();
 		Context context1 = new Context(vip1Strategy);
 		vip1Strategy.getPrice(1000);

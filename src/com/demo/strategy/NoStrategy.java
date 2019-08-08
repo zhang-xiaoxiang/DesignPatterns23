@@ -10,6 +10,12 @@ package com.demo.strategy;
  * @date: 2019/05/24
  */
 public class NoStrategy {
+	/**
+	 * 传入客服等级类型获取相应的价格
+	 * @param type   会员类型(等级)
+	 * @param price  响应的价格
+	 * @return
+	 */
 	public double getPrice(String type, double price) {
 
 		if (type.equals("普通客户小批量")) {

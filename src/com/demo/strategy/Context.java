@@ -31,7 +31,11 @@ public class Context {
 	public void setStrategy(Strategy strategy) {
 		this.strategy = strategy;
 	}
-	
+
+	/**
+	 * 获得计算后的价格
+	 * @param s
+	 */
 	public void printPrice(double s){
 		System.out.println("您该报价："+strategy.getPrice(s));
 	}
