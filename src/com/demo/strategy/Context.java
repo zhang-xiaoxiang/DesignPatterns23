@@ -12,33 +12,27 @@ public class Context {
 	/**
 	 * 当前采用的算法对象
 	 * 面向接口,组合编程,少用继承
+	 * 简言之复杂类型(类,接口等)做属性
 	 */
 	private Strategy strategy;
 
 	/**
-	 * 可以通过构造器来注入
+	 * 选择策略Strategy实现类
+	 * 有参构造器(不写无参构造器,那么new 策略实现保证必须传一种策略,这里set方法也不用设置,
+	 * 设置了也没用(要设置set方法那么还是把无参构造也写出来才会有用,所以set伴随无参构造的感觉)
+	 * 这样同时也知道了为什么有参构造器设置了为什么无参构造器就失效了,JDK这样设计是有一定道理的,哈哈)
 	 * @param strategy
 	 */
 	public Context(Strategy strategy) {
-		super();
 		this.strategy = strategy;
 	}
 
-	/**
-	 * 可以通过set方法来注入
-	 * @param strategy
-	 */
-	public void setStrategy(Strategy strategy) {
-		this.strategy = strategy;
+
+
+	public double getReultPrice(double price){
+		return this.strategy.getPrice(price);
 	}
 
-	/**
-	 * 获得计算后的价格
-	 * @param s
-	 */
-	public void printPrice(double s){
-		System.out.println("您该报价："+strategy.getPrice(s));
-	}
-	
-	
+
+
 }

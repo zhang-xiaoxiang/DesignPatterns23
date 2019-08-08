@@ -30,11 +30,17 @@ public class NoStrategy {
 		} else if ("老客户大批量".equals(type)) {
 			System.out.println("[未采用设计模式] 打七折");
 			return price * 0.7;
-		}else {
-			//乱传的也是当普通客户小批量(就是不打折)
-			return price;
+
+
+		//拓展一种策略
+		}else if("老客户特大批量".equals(type)){
+			System.out.println("[未采用设计模式] 打六折");
+			return price*0.6;
 		}
 
+
+		//乱传的也是当普通客户小批量(就是不打折)
+		return price;
 	}
 
 }
