@@ -1,7 +1,10 @@
 package com.demo.strategy;
 
 /**
- * Client:策略模式客户端---测试
+ * Client:策略模式客户端---Client 的main方法 可以想象成我们在使用别人写好的框架,我们有新的需求,对框架开发者来说就是需要对已有的
+ * 代码进行维护升级,比如此时我们修改NoStrategy类,那么修改完后新版本的框架NoStrategy类很有能是对已经在使用的客户机制上不兼容的,如果
+ * 用户升级为新版框架,遇到使用NoStrategy类的会报错,各种不兼容就不符合开发者维护的版本的规范,所以修改已有的类是极其不科学的
+ *
  *
  * @author zhangxiaoxiang
  * @date: 2019/05/24
