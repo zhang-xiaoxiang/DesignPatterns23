@@ -27,12 +27,7 @@ public class Context {
 		this.strategy = strategy;
 	}
 
-
-
 	public double getReultPrice(double price){
 		return this.strategy.getPrice(price);
 	}
-
-
-
 }
