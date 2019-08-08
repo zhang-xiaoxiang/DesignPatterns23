@@ -1,12 +1,13 @@
 package com.demo.strategy;
 /**
- * Client:策略模式客户端
+ * Client:策略模式客户端---测试
  *
  * @author zhangxiaoxiang
  * @date: 2019/05/24
  */
 public class Client {
 	public static void main(String[] args) {
+
 		System.out.println("测试策略1-----------------------------------------");
 		/**
 		 * 多态写法,左边接口接收,右边实现类(策略)
@@ -25,6 +26,12 @@ public class Client {
 		Strategy vip1Strategy = new VIP1Strategy();
 		Context context1 = new Context(vip1Strategy);
 		vip1Strategy.getPrice(1000);
+		System.out.println("怎么体现策略模式呢?现在需求是增加一种会员机制,老客户特大批量,那么显然打折力度更大," +
+				"我们设置为6折,分别在未使用策略模式和使用了策略模式的基础上拓展,看那个更加易于拓展,方便维护");
+
+
+
+
 
 	}
 }

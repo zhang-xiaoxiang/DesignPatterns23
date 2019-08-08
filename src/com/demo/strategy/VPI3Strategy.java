@@ -12,7 +12,7 @@ public class VPI3Strategy implements Strategy {
 	 */
 	@Override
 	public double getPrice(double standardPrice) {
-		System.out.println("三级会员七折:"+standardPrice*0.7);
+		System.out.println("[策略模式]三级会员七折:"+standardPrice*0.7);
 		return standardPrice*0.7;
 	}
 

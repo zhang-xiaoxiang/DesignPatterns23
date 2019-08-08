@@ -12,7 +12,7 @@ public class VIP2Strategy implements Strategy {
 	 */
 	@Override
 	public double getPrice(double standardPrice) {
-		System.out.println("二级会员八折:"+standardPrice*0.8);
+		System.out.println("[策略模式]二级会员八折:"+standardPrice*0.8);
 		return standardPrice*0.8;
 	}
 

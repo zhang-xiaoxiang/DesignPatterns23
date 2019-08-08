@@ -14,7 +14,7 @@ public class VIP1Strategy implements Strategy {
      */
     @Override
     public double getPrice(double standardPrice) {
-        System.out.println("一级会员 打九折："+standardPrice * 0.9);
+        System.out.println("[策略模式]一级会员 打九折："+standardPrice * 0.9);
         return standardPrice * 0.9;
     }
 
