@@ -3,11 +3,10 @@ package com.demo.proxy.dynamicproxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 /**
- * StarHandler:实现JDK调用处理器,用于被代理的一个类,达到动态代理
+ * StarHandler:这是一个对JDK调用处理器的实现类,用于被代理的一个类,利用这个类可以JDK为其生成一个代理对象
  * @author zhangxiaoxiang
  * @date 2019/8/9
  */
-
 public class StarHandler implements InvocationHandler {
 	/**
 	 * 这里仍然是要代理接口的,相当于唱歌业务流程始终是要有公司接单,实现演唱会,只是这里不是代理类直接接单
