@@ -1,14 +1,19 @@
-package com.demo.proxy.dynamicProxy;
+package com.demo.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+/**
+ * StarHandler:
+ * @author zhangxiaoxiang
+ * @date 2019/8/9
+ */
 
 public class StarHandler implements InvocationHandler {
 	
 	Star realStar;
 	
 	public StarHandler(Star realStar) {
-		super();
+		// super();
 		this.realStar = realStar;
 	}
 
