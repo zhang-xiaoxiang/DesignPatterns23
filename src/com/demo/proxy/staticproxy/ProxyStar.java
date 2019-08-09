@@ -8,6 +8,10 @@ package com.demo.proxy.staticproxy;
 public class ProxyStar implements Star {
 	/**
 	 * 专业的事情教给专业的人去做,比如在这里就是相当于请歌手唱歌
+	 * 注意这里接口做属性,组合比实现类(应用)做属性好的多,因为接口做属性可以请很多歌手唱歌(提现多态),
+	 * 但是是实现类做属性(面向实现编程)耦合度太高,换个歌手又得修改这个类,开闭原则是尽量不要修改这个类,所以这里
+	 * 是使用Star,而不是 private RealStar star
+	 * ---静态代理代理的是接口就是出自这里
 	 */
 	private Star star;
 
