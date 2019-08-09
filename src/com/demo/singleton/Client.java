@@ -1,4 +1,9 @@
 package com.demo.singleton;
+/**
+ * Client:客服端测试
+ * @author zhangxiaoxiang
+ * @date 2019/8/9
+ */
 
 public class Client {
 	
