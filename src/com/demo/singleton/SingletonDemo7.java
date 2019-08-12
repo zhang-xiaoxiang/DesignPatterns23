@@ -6,18 +6,20 @@ import java.io.Serializable;
 /**
  * SingletonDemo7:单例模式---防止反射和反序列化漏(懒汉式衍生版本2)
  *
+ * 优点:线程安全且带有延迟
+ *
  * @author zhangxiaoxiang
  * @date 2019/8/9
  */
 
 public class SingletonDemo7 implements Serializable {
 	/**
-	 * 1类初始化时，不初始化这个对象（延时加载，真正用的时候再创建）。
+	 * 1:类初始化时，不初始化这个对象（延时加载，真正用的时候再创建）。
 	 */
 	private static SingletonDemo7 instance;
 
 	/**
-	 * 2私有化构造器
+	 * 2:私有化构造器
 	 */
 	private SingletonDemo7(){
 		if(instance!=null){
