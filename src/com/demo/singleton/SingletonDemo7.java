@@ -4,7 +4,8 @@ import java.io.ObjectStreamException;
 import java.io.Serializable;
 
 /**
- * SingletonDemo7:懒汉式单例模式(如何防止反射和反序列化漏)
+ * SingletonDemo7:单例模式---防止反射和反序列化漏(懒汉式衍生版本2)
+ *
  * @author zhangxiaoxiang
  * @date 2019/8/9
  */
@@ -43,5 +44,21 @@ public class SingletonDemo7 implements Serializable {
 	private Object readResolve() throws ObjectStreamException {
 		return instance;
 	}
-	
+
+}
+/**
+ * Test06:防止反射和反序列化漏测试
+ *
+ * @author zhangxiaoxiang
+ * @date 2019/8/12
+ */
+class Test07{
+	public static void main(String[] args) {
+		SingletonDemo7 instance = SingletonDemo7.getInstance();
+		SingletonDemo7 instance2 = SingletonDemo7.getInstance();
+		System.out.println(instance);
+		System.out.println(instance2);
+		//true
+		System.out.println(instance==instance2);
+	}
 }

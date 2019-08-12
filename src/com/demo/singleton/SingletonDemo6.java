@@ -2,7 +2,9 @@ package com.demo.singleton;
 
 
 /**
- * SingletonDemo6:枚举模式：最安全
+ * SingletonDemo6:单例模式---枚举模式
+ *
+ * 优点:线程最安全
  *
  * @author zhangxiaoxiang
  * @date 2019/8/12
