@@ -2,7 +2,7 @@ package com.demo.singleton;
 
 /**
  * SingletonDemo3:单例模式---双重同步锁(懒汉模式衍生版本)
- * <p>
+ *
  * volatile作用：解决并发问题,以下会涉及到Java内存模型的知识
  *
  * @author zhangxiaoxiang

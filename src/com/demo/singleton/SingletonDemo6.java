@@ -4,6 +4,7 @@ package com.demo.singleton;
 /**
  * SingletonDemo6:单例模式---枚举模式
  *
+ * 推荐使用
  * 优点:线程最安全
  *
  * @author zhangxiaoxiang

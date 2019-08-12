@@ -7,6 +7,7 @@ import java.io.Serializable;
  * SingletonDemo7:单例模式---防止反射和反序列化漏(懒汉式衍生版本2)
  *
  * 优点:线程安全且带有延迟
+ * 缺点:调用效率低
  *
  * @author zhangxiaoxiang
  * @date 2019/8/9
