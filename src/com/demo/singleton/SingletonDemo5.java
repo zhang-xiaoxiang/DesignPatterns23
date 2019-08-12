@@ -1,7 +1,7 @@
 package com.demo.singleton;
 
 /**
- * SingletonDemo5:单例模式---枚举式实现
+ * SingletonDemo5:单例模式---枚举实现
  *
  * 优点:这个是线程最安全,抗并发能力最强的
  * 缺点:没有延时加载
