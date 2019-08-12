@@ -2,7 +2,8 @@ package com.demo.singleton;
 
 /**
  * SingletonDemo2:单例模式---懒汉式
- *
+ * 优点:延迟加载(资源利用合理)
+ * 缺点:线程不安全
  * @author zhangxiaoxiang
  * @date 2019/8/9
  */

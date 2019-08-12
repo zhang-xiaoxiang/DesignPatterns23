@@ -2,6 +2,8 @@ package com.demo.singleton;
 
 /**
  * SingletonDemo1:单例模式---饿汉式
+ * 优点:线程安全
+ * 缺点:没有延迟加载的优势(即容易咋成资源浪费)
  *
  * @author zhangxiaoxiang
  * @date 2019/8/9
