@@ -3,7 +3,7 @@ package com.demo.singleton;
 /**
  * SingletonDemo2:单例模式---懒汉式
  * 优点:延迟加载(资源利用合理,用的时候才new)
- * 缺点:synchronized加了线程相对安全效率低,不加线程不安全效率高
+ * 缺点:synchronized加了线程安全效率低,不加线程不安全效率高
  *
  * @author zhangxiaoxiang
  * @date 2019/8/9
@@ -27,6 +27,7 @@ public class SingletonDemo2 {
      * 这个地方可以优化,可以产生衍生版本,这个是屌丝版本哈
      */
     public static synchronized SingletonDemo2 getInstance() {
+        //如果方法不加锁,多个线程(并发环境下)同时访问到这段代码的时候会出现"判断失误",所以这里加了锁保证线程安全
         if (instance == null) {
             instance = new SingletonDemo2();
         }
